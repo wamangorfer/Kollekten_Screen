@@ -1,0 +1,34 @@
+/* Basis-Styling für die Startseite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Zentriertes Container-Design */
+.home-container {
+    width: 50%;
+    max-width: 600px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Buttons */
+.home-container .btn {
+    font-size: 1.5rem;
+    padding: 15px;
+    margin-top: 10px;
+}
