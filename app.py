@@ -20,7 +20,10 @@ def save_config(data):
 #routes
 @app.route("/")
 def home():
-    return render_template("index.html")
+    config_data = load_config()
+    return render_template("index.html",
+                           sammlung1=config_data["sammlung1"],
+                           sammlung2=config_data["sammlung2"])
 
 @app.route("/config", methods=["GET", "POST"])
 def config():

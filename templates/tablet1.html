@@ -34,6 +34,12 @@
                 elem.requestFullscreen().catch(err => console.log(err));
             }
         });
+        document.addEventListener("dblclick", function() {
+            let elem = document.documentElement;
+            if (document.fullscreenElement) {
+                document.exitFullscreen().catch(err => console.log(err));
+            }
+        });
         </script>
            
 </body>
